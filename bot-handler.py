@@ -1,7 +1,7 @@
 import logging
 from telegram import Update, Bot
 from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, MessageHandler,filters
-from Engine import *
+from Engine import bot as bt
 
 bot_token = open("API_telegram.txt", "r").read()
 
@@ -21,7 +21,8 @@ async def chatgpt(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("chatgpt working...")
 
     uinput = str(update.message.text)
-    await update.message.reply_text(uinput)
+    chatgptreply = bt(uinput)
+    await update.message.reply_text(chatgptreply)
 
 
 def main() -> None:
