@@ -19,7 +19,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def chatgpt(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print("chatgpt working...")
-    a = 0
 
     uinput = str(update.message.text)
     await update.message.reply_text(uinput)
