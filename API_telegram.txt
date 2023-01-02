@@ -1,2 +1,0 @@
-# Put Your telegram bot API from FatherBot here
-# Paste here
