@@ -1,5 +1,0 @@
-# Here is where you put your openai Chatgpt API
-# Paste Here
-
-
-
